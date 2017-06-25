@@ -1,0 +1,7 @@
+<!-- Article -->
+<h1>Blog</h1>
+<article>
+  <section>
+    <a href="#/article/<%= id %>"><%= item.title %></h2></a>
+  </section>
+</article>

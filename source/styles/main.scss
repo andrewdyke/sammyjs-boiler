@@ -1,0 +1,49 @@
+
+@import 'setup';
+@import 'variables';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 1.6rem;
+  background: lightblue;
+}
+
+.primary-font {
+  font-family: $primary-font;
+}
+
+#body {
+	display: none;
+}
+
+#main {
+	padding: 10px;
+}
+
+.app-wrap {
+	position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#app {
+	transition: transform .3s;
+	transform: scale(1);
+}
+
+#app.scaleTrans {
+	transform: scale(.9);
+}
+
+@import './layout/global/header';
+
+// Import new parts here
+@import './layout/blogPost';
+
+@import './layout/global/footer';
